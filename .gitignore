@@ -1,0 +1,26 @@
+# Directories
+/Data/*
+!/Data/Logs
+!/Data/Persistent
+
+/Build/*
+/Web/_Resources/*
+/bin/*
+/Packages/Libraries/*
+/Packages/Build/*
+/Packages/Application/*
+/flow
+/flow.bat
+
+# Specific Files
+/Configuration/Settings.yaml
+/Configuration/Database/*
+/Configuration/Caches.yaml
+
+# Temp files and binaries
+*.log
+*.cache
+*.bak
+*.tmp
+.DS_Store
+Thumbs.db
