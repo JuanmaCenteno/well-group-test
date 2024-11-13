@@ -1,0 +1,28 @@
+<f:layout name="Default"/>
+
+<f:section name="Title">Edit contact "{contact.name}"</f:section>
+
+<f:section name="Content">
+	<f:form action="update" object="{contact}" objectName="contact">
+		<ol>
+			<li>
+				<label for="name">Name</label>
+				<f:form.textfield id="name" property="name"/>
+			</li>
+
+			<li>
+				<label for="email">Email</label>
+				<f:form.textfield id="email" property="email"/>
+			</li>
+
+			<li>
+				<label for="phone">Phone</label>
+				<f:form.textfield id="phone" property="phone"/>
+			</li>
+
+			<li>
+				<f:form.submit value="Update"/>
+			</li>
+		</ol>
+	</f:form>
+</f:section>

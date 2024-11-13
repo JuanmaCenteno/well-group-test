@@ -20,10 +20,10 @@
     },
     "require": {
         "neos/flow": "~8.3.0",
-        "neos/welcome": "~8.3.0"
+        "wellgroup/contactsmanager": "@dev"
     },
     "require-dev": {
-        "neos/kickstarter": "~8.3.0",
+        "neos/kickstarter": "^8.3",
         "neos/buildessentials": "~8.3.0",
         "neos/behat": "~8.3.0",
         "phpunit/phpunit": "~9.0",

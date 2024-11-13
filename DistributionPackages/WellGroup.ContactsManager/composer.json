@@ -1,0 +1,18 @@
+{
+    "description": "",
+    "type": "neos-package",
+    "name": "wellgroup/contactsmanager",
+    "require": {
+        "neos/flow": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "WellGroup\\ContactsManager\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "WellGroup.ContactsManager"
+        }
+    }
+}

@@ -1,4 +1,5 @@
 # Directories
+/.idea/*
 /Data/*
 !/Data/Logs
 !/Data/Persistent
