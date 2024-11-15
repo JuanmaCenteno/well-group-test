@@ -2,6 +2,7 @@
 
 namespace WellGroup\ContactsManager\Domain\Model;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Neos\Flow\Annotations as Flow;
 use Doctrine\ORM\Mapping as ORM;
 
@@ -9,42 +10,120 @@ use Doctrine\ORM\Mapping as ORM;
  * @Flow\Entity
  */
 class Contact {
-    /**
-     * @var string
-     */
-    protected string $name;
 
     /**
-     * @var string
+     * @Flow\Validate(type="NotEmpty")
+     * @ORM\ManyToOne(inversedBy="contacts")
+     * @var ContactList
      */
-    protected string $email;
+    protected $contactList;
 
     /**
+     * @Flow\Validate(type="NotEmpty")
+     * @Flow\Validate(type="StringLength", options={ "minimum"=3, "maximum"=80 })
+     * @ORM\Column(length=80)
      * @var string
      */
-    protected string $phone;
+    protected $name;
 
-    public function getName(): string {
+    /**
+     * @Flow\Validate(type="Neos.Flow:EmailAddress")
+     * @var string
+     */
+    protected $email;
+
+    /**
+     * @Flow\Validate(type="NotEmpty")
+     * @Flow\Validate(type="StringLength", options={ "minimum"=9, "maximum"=12 })
+     * @ORM\Column(length=12)
+     * @var string
+     */
+    protected $phone;
+
+    /**
+     * @Flow\Validate(type="StringLength", options={ "maximum"=150 })
+     * @ORM\Column(length=150)
+     * @var string
+     */
+    protected $address;
+
+    public function __construct() {
+        $this->contactList = new ArrayCollection();
+    }
+
+
+    /**
+     * @return ContactList
+     */
+    public function getContactList() {
+        return $this->contactList;
+    }
+
+    /**
+     * @param $contactList
+     * @return void
+     */
+    public function setContactList($contactList) {
+        $this->contactList = $contactList;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName() {
         return $this->name;
     }
 
-    public function setName(string $name): void {
+    /**
+     * @param string $name
+     * @return void
+     */
+    public function setName($name) {
         $this->name = $name;
     }
 
-    public function getEmail(): string {
+    /**
+     * @return string
+     */
+    public function getEmail() {
         return $this->email;
     }
 
-    public function setEmail(string $email): void {
+    /**
+     * @param string $email
+     * @return void
+     */
+    public function setEmail($email) {
         $this->email = $email;
     }
 
-    public function getPhone(): string {
+    /**
+     * @return string
+     */
+    public function getPhone() {
         return $this->phone;
     }
 
-    public function setPhone(string $phone): void {
+    /**
+     * @param string $phone
+     * @return void
+     */
+    public function setPhone($phone) {
         $this->phone = $phone;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAddress() {
+        return $this->address;
+    }
+
+    /**
+     * @param string $address
+     * @return void
+     */
+    public function setAddress($address) {
+        $this->address = $address;
     }
 }

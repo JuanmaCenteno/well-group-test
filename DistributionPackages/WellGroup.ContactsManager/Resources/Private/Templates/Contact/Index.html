@@ -1,27 +1,36 @@
 <f:layout name="Default"/>
 
-<f:section name="Title">A list of contacts</f:section>
-
-<f:section name="Content">
-	<f:if condition="{contacts}">
-		<f:then>
-			<ul>
-				<f:for as="contact" each="{contacts}">
-					<li>
-						<f:link.action action="show" arguments="{contact: contact}">{contact.name}</f:link.action>
-						<f:link.action action="edit" arguments="{contact: contact}">Edit</f:link.action>
+<f:section name="content">
+	<f:flashMessages class="flashmessages"/>
+	<h1>Contacts List</h1>
+	<div class="table-responsive">
+		<table class="table table-striped table-hover">
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Phone</th>
+				<th>Actions</th>
+			</tr>
+			</thead>
+			<tbody>
+			<f:for as="contact" each="{contacts}">
+				<tr>
+					<td>{contact.name}</td>
+					<td>{contact.email}</td>
+					<td>{contact.phone}</td>
+					<td>
+						<f:link.action action="edit" arguments="{contact: contact}" class="btn btn-primary">
+							Edit
+						</f:link.action>
 						<f:form action="delete" arguments="{contact: contact}">
-							<f:form.submit value="Delete"/>
+							<f:form.submit class="btn btn-danger" name="delete" value="Delete"/>
 						</f:form>
-					</li>
-				</f:for>
-			</ul>
-		</f:then>
-		<f:else>
-			<p>No contacts created yet.</p>
-		</f:else>
-	</f:if>
-	<p>
-		<f:link.action action="new">Create a new contact</f:link.action>
-	</p>
+					</td>
+				</tr>
+			</f:for>
+			</tbody>
+		</table>
+	</div>
+	<f:link.action action="new" class="btn btn-primary mt-4">Add New Contact</f:link.action>
 </f:section>

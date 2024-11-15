@@ -4,15 +4,15 @@
     <option name="directories">
       <list>
         <option value="$PROJECT_DIR$/Packages/Libraries/neos/utility-unicode/Tests" />
-        <option value="$PROJECT_DIR$/Packages/Libraries/neos/cache/Tests" />
-        <option value="$PROJECT_DIR$/Packages/Libraries/neos/utility-files/Tests" />
-        <option value="$PROJECT_DIR$/Packages/Libraries/neos/utility-mediatypes/Tests" />
-        <option value="$PROJECT_DIR$/Packages/Libraries/neos/utility-schema/Tests" />
-        <option value="$PROJECT_DIR$/Packages/Libraries/neos/utility-objecthandling/Tests" />
         <option value="$PROJECT_DIR$/Packages/Libraries/neos/error-messages/Tests" />
-        <option value="$PROJECT_DIR$/Packages/Libraries/neos/utility-arrays/Tests" />
+        <option value="$PROJECT_DIR$/Packages/Libraries/neos/utility-mediatypes/Tests" />
         <option value="$PROJECT_DIR$/Packages/Libraries/mikey179/vfsstream/src/test/phpt" />
         <option value="$PROJECT_DIR$/Packages/Libraries/mikey179/vfsstream/src/test/php" />
+        <option value="$PROJECT_DIR$/Packages/Libraries/neos/utility-schema/Tests" />
+        <option value="$PROJECT_DIR$/Packages/Libraries/neos/utility-files/Tests" />
+        <option value="$PROJECT_DIR$/Packages/Libraries/neos/cache/Tests" />
+        <option value="$PROJECT_DIR$/Packages/Libraries/neos/utility-arrays/Tests" />
+        <option value="$PROJECT_DIR$/Packages/Libraries/neos/utility-objecthandling/Tests" />
       </list>
     </option>
   </component>

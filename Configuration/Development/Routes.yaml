@@ -1,9 +1,12 @@
-- name: 'ContactsManager'
-  uriPattern: 'contacts/{@action}'
+- name: 'Contacts Manager'
+  uriPattern: 'contacts(/{@action})'
   defaults:
     '@package': 'WellGroup.ContactsManager'
     '@controller': 'Contact'
-    '@action': 'list'
+    '@action': 'index'
+    '@format': 'html'
   routeParts:
     contact:
       objectType: 'WellGroup\ContactsManager\Domain\Model\Contact'
+  appendExceedingArguments: true
+

@@ -4,85 +4,62 @@ namespace WellGroup\ContactsManager\Controller;
 
 use Neos\Flow\Mvc\Controller\ActionController;
 use WellGroup\ContactsManager\Domain\Model\Contact;
+use WellGroup\ContactsManager\Domain\Repository\ContactListRepository;
 use WellGroup\ContactsManager\Domain\Repository\ContactRepository;
+use Neos\Flow\Mvc\View\ViewInterface;
 use Neos\Flow\Annotations as Flow;
 
 class ContactController extends ActionController {
+
+    /**
+     * @Flow\Inject
+     * @var ContactListRepository
+     */
+    protected $contactListRepository;
+
     /**
      * @Flow\Inject
      * @var ContactRepository
      */
-    protected $contactRepository;
+    protected ContactRepository $contactRepository;
 
-    /**
-     *
-     *
-     * @return void
-     */
-    public function listAction() {
-        $contacts = $this->contactRepository->findAll();
-        $this->view->assign('contacts', $contacts);
+    protected function initializeView(ViewInterface $view): void {
+        $contactList = $this->contactListRepository->findActive();
+        $this->view->assign('contactList', $contactList);
     }
 
-    /**
-     * @return void
-     */
-    public function newAction() {
-    }
-
-    /**
-     * @return void
-     */
-    public function indexAction() {
+    public function indexAction(): void {
         $this->view->assign('contacts', $this->contactRepository->findAll());
     }
 
-    /**
-     * @param \WellGroup\ContactsManager\Domain\Model\Contact $contact
-     * @return void
-     */
-    public function showAction(Contact $contact) {
+    public function showAction(Contact $contact): void {
         $this->view->assign('contact', $contact);
     }
 
-    /**
-     * @param Contact $newContact
-     * @return void
-     * @throws \Neos\Flow\Mvc\Exception\StopActionException
-     * @throws \Neos\Flow\Persistence\Exception\IllegalObjectTypeException
-     */
-    public function createAction(Contact $newContact): void {
-        $this->contactRepository->add($newContact);
-        $this->redirect('list');
+    public function newAction(): void {
+        $this->view->assign('newContact', new Contact());
     }
 
-    /**
-     * @param Contact $contact
-     * @return void
-     */
+    public function createAction(Contact $newContact): void {
+        $this->contactRepository->add($newContact);
+        $this->addFlashMessage('Contact created successfully.');
+        $this->redirect('index');
+    }
+
     public function editAction(Contact $contact): void {
         $this->view->assign('contact', $contact);
     }
 
-    /**
-     * @param Contact $contact
-     * @return void
-     * @throws \Neos\Flow\Mvc\Exception\StopActionException
-     * @throws \Neos\Flow\Persistence\Exception\IllegalObjectTypeException
-     */
+
     public function updateAction(Contact $contact): void {
         $this->contactRepository->update($contact);
-        $this->redirect('list');
+        $this->addFlashMessage('Contact updated successfully.');
+        $this->redirect('index');
     }
 
-    /**
-     * @param Contact $contact
-     * @return void
-     * @throws \Neos\Flow\Mvc\Exception\StopActionException
-     * @throws \Neos\Flow\Persistence\Exception\IllegalObjectTypeException
-     */
     public function deleteAction(Contact $contact): void {
         $this->contactRepository->remove($contact);
-        $this->redirect('list');
+        $this->addFlashMessage('Contact deleted successfully.');
+        $this->redirect('index');
     }
 }

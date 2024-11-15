@@ -2,9 +2,26 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/mikey179/vfsstream/src/test/php" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/mikey179/vfsstream/src/test/phpt" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/cache/Tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/cache/Tests" isTestSource="true" packagePrefix="Neos\Cache\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/error-messages/Tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/error-messages/Tests" isTestSource="true" packagePrefix="Neos\Error\Messages\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/utility-arrays/Tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/utility-arrays/Tests" isTestSource="true" packagePrefix="Neos\Utility\Arrays\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/utility-files/Tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/utility-files/Tests" isTestSource="true" packagePrefix="Neos\Flow\Utility\Files\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/utility-mediatypes/Tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/utility-mediatypes/Tests" isTestSource="true" packagePrefix="Neos\Utility\MediaTypes\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/utility-objecthandling/Tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/utility-objecthandling/Tests" isTestSource="true" packagePrefix="Neos\Utility\ObjectHandling\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/utility-schema/Tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/utility-schema/Tests" isTestSource="true" packagePrefix="Neos\Flow\Utility\Schema\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/utility-unicode/Tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/utility-unicode/Tests" isTestSource="true" packagePrefix="Neos\Flow\Utility\Unicode\Tests\" />
       <sourceFolder url="file://$MODULE_DIR$/Packages/Application/Neos.Behat/Classes" isTestSource="false" packagePrefix="Neos\Behat\" />
       <sourceFolder url="file://$MODULE_DIR$/Packages/Application/Neos.Behat/Tests" isTestSource="true" packagePrefix="Neos\Behat\Tests\" />
-      <sourceFolder url="file://$MODULE_DIR$/Packages/Application/Neos.Welcome/Classes" isTestSource="false" packagePrefix="Neos\Welcome\" />
       <sourceFolder url="file://$MODULE_DIR$/Packages/Framework/Neos.Eel/Classes" isTestSource="false" packagePrefix="Neos\Eel\" />
       <sourceFolder url="file://$MODULE_DIR$/Packages/Framework/Neos.Flow/Classes" isTestSource="false" packagePrefix="Neos\Flow\" />
       <sourceFolder url="file://$MODULE_DIR$/Packages/Framework/Neos.Flow/Scripts/Migrations" isTestSource="false" packagePrefix="Neos\Flow\Core\Migrations\" />
@@ -83,40 +100,22 @@
       <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/masterminds/html5/src" isTestSource="false" packagePrefix="Masterminds\" />
       <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/masterminds/html5/test/HTML5" isTestSource="true" packagePrefix="Masterminds\HTML5\Tests\" />
       <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/mikey179/vfsstream/src/main/php" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/mikey179/vfsstream/src/test/php" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/mikey179/vfsstream/src/test/phpt" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/myclabs/deep-copy/fixtures" isTestSource="true" packagePrefix="DeepCopy\" />
       <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/myclabs/deep-copy/src/DeepCopy" isTestSource="false" packagePrefix="DeepCopy\" />
       <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/myclabs/deep-copy/tests/DeepCopyTest" isTestSource="true" packagePrefix="DeepCopyTest\" />
       <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/cache/Classes" isTestSource="false" packagePrefix="Neos\Cache\" />
-      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/cache/Tests" isTestSource="true" packagePrefix="Neos\Cache\Tests\" />
-      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/cache/Tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/composer-plugin/Classes" isTestSource="false" packagePrefix="Neos\ComposerPlugin\" />
       <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/error-messages/Classes" isTestSource="false" packagePrefix="Neos\Error\Messages\" />
-      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/error-messages/Tests" isTestSource="true" packagePrefix="Neos\Error\Messages\Tests\" />
-      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/error-messages/Tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/flow-log/Classes" isTestSource="false" packagePrefix="Neos\Flow\Log\" />
       <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/flow-log/Tests" isTestSource="true" packagePrefix="Neos\Flow\Log\Tests\" />
       <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/utility-arrays/Classes" isTestSource="false" packagePrefix="Neos\Utility\" />
-      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/utility-arrays/Tests" isTestSource="true" packagePrefix="Neos\Utility\Arrays\Tests\" />
-      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/utility-arrays/Tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/utility-files/Classes" isTestSource="false" packagePrefix="Neos\Utility\" />
-      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/utility-files/Tests" isTestSource="true" packagePrefix="Neos\Flow\Utility\Files\Tests\" />
-      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/utility-files/Tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/utility-mediatypes/Classes" isTestSource="false" packagePrefix="Neos\Utility\" />
-      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/utility-mediatypes/Tests" isTestSource="true" packagePrefix="Neos\Utility\MediaTypes\Tests\" />
-      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/utility-mediatypes/Tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/utility-objecthandling/Classes" isTestSource="false" packagePrefix="Neos\Utility\" />
-      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/utility-objecthandling/Tests" isTestSource="true" packagePrefix="Neos\Utility\ObjectHandling\Tests\" />
-      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/utility-objecthandling/Tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/utility-opcodecache/Classes" isTestSource="false" packagePrefix="Neos\Utility\" />
       <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/utility-pdo/Classes" isTestSource="false" packagePrefix="Neos\Utility\" />
       <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/utility-schema/Classes" isTestSource="false" packagePrefix="Neos\Utility\" />
-      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/utility-schema/Tests" isTestSource="true" packagePrefix="Neos\Flow\Utility\Schema\Tests\" />
-      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/utility-schema/Tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/utility-unicode/Classes" isTestSource="false" packagePrefix="Neos\Utility\Unicode\" />
-      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/utility-unicode/Tests" isTestSource="true" packagePrefix="Neos\Flow\Utility\Unicode\Tests\" />
-      <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/neos/utility-unicode/Tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/nikic/php-parser/lib/PhpParser" isTestSource="false" packagePrefix="PhpParser\" />
       <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/nikic/php-parser/test/PhpParser" isTestSource="true" packagePrefix="PhpParser\" />
       <sourceFolder url="file://$MODULE_DIR$/Packages/Libraries/psr/cache/src" isTestSource="false" packagePrefix="Psr\Cache\" />

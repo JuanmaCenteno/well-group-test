@@ -1,17 +1,12 @@
 <f:layout name="Default"/>
 
-<f:section name="Title">Show contact"{contact.name}"</f:section>
-
-<f:section name="Content">
-	<table>
-		<tr>
-			<th>Name</th>
-			<td>{contact.name}</td>
-			<th>Email</th>
-			<td>{contact.email}</td>
-			<th>Phone</th>
-			<td>{contact.phone}</td>
-		</tr>
-	</table>
-	<f:link.action action="index">Back</f:link.action>
+<f:section name="content">
+	<h1>Contact Details</h1>
+	<ul class="list-group">
+		<li class="list-group-item"><strong>Name:</strong> {contact.name}</li>
+		<li class="list-group-item"><strong>Email:</strong> {contact.email}</li>
+		<li class="list-group-item"><strong>Phone:</strong> {contact.phone}</li>
+		<li class="list-group-item"><strong>Address:</strong> {contact.address}</li>
+	</ul>
+	<f:link.action action="index" class="btn btn-secondary mt-3">Back to List</f:link.action>
 </f:section>

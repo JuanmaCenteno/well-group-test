@@ -1,28 +1,12 @@
 <f:layout name="Default"/>
 
-<f:section name="Title">Edit contact "{contact.name}"</f:section>
+<f:section name="content">
+	<h1>Edit Contact "{contact.name}"</h1>
 
-<f:section name="Content">
 	<f:form action="update" object="{contact}" objectName="contact">
-		<ol>
-			<li>
-				<label for="name">Name</label>
-				<f:form.textfield id="name" property="name"/>
-			</li>
-
-			<li>
-				<label for="email">Email</label>
-				<f:form.textfield id="email" property="email"/>
-			</li>
-
-			<li>
-				<label for="phone">Phone</label>
-				<f:form.textfield id="phone" property="phone"/>
-			</li>
-
-			<li>
-				<f:form.submit value="Update"/>
-			</li>
-		</ol>
+		<f:render arguments="{contact: contact}" partial="Contact/Form"/>
+		<button class="btn btn-warning mt-2" type="submit">Update Contact</button>
 	</f:form>
+
+	<f:link.action action="index" class="btn btn-secondary mt-3">Back to List</f:link.action>
 </f:section>
