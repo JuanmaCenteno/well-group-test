@@ -1,7 +1,7 @@
 # Directories
 /.idea/*
 /Data/*
-!/Data/Logs
+!/Data/Logs/*
 !/Data/Persistent
 
 /Build/*
